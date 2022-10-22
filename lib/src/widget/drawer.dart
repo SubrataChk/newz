@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:newz/src/view/bookmark/bookmark.dart';
+import 'package:newz/src/view/home/home.dart';
 import 'package:newz/src/widget/custom_list_tiles.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
@@ -51,7 +52,10 @@ class _DrawerSectionState extends State<DrawerSection> {
                   ],
                 )),
             CustomListTiles(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePageSection()));
+              },
               title: "Home",
               icons: Icons.home,
             ),
