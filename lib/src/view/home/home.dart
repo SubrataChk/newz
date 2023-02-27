@@ -30,6 +30,7 @@ class HomePageSection extends StatefulWidget {
 
 class _HomePageSectionState extends State<HomePageSection> {
   var newsType = NewsType.allNews;
+
   // List<NewModel> newsList = [];
   int currentpage_index = 0;
   var sortBy = SortByName.PublishedAt.name;
@@ -240,14 +241,7 @@ class _HomePageSectionState extends State<HomePageSection> {
                               itemBuilder: (context, index) {
                                 return ChangeNotifierProvider.value(
                                   value: snapshot.data![index],
-                                  child: ArticleSection(
-                                      // title: snapshot.data![index].title,
-                                      // imageUrl: snapshot.data![index].urlToImage,
-                                      // url: snapshot.data![index].url,
-                                      // dateTime: snapshot.data![index].dateToShow,
-                                      // readingTime:
-                                      // snapshot.data![index].readingTimeText,
-                                      ),
+                                  child: const ArticleSection(),
                                 );
                               }))
                       : SizedBox(

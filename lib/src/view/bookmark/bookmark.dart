@@ -27,9 +27,9 @@ class BookMarkPageSection extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Center(
             child: Text(
-              "You don't add anything yet to your bookmark.",
+              "Upcoming Feature ",
               textAlign: TextAlign.center,
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.sp),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.sp),
             ),
           ),
         )

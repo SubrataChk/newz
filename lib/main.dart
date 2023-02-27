@@ -6,6 +6,7 @@ import 'package:newz/src/model/news_model.dart';
 import 'package:newz/src/provider/news_provider.dart';
 import 'package:newz/src/view/home/home.dart';
 import 'package:newz/src/provider/dark_theme_provider.dart';
+import 'package:newz/src/view/splash/splash.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -56,7 +57,7 @@ class _MyAppState extends State<MyApp> {
                 debugShowCheckedModeBanner: false,
                 title: "NewZ",
                 theme: Styles.themeData(themeProvider.getDarkTheme, context),
-                home: HomePageSection(),
+                home: SplashScreen(),
               );
             },
           );
