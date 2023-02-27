@@ -44,7 +44,7 @@ class _TopTrendingState extends State<TopTrending> {
                       height: 300.h,
                       width: double.infinity,
                       boxFit: BoxFit.fill,
-                      imageUrl: newsProvider.urlToImage),
+                      imageUrl: newsProvider.urlToImage ?? ""),
                 ),
               ),
               Padding(

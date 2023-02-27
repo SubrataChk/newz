@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   startTimer() {
-    var duration = const Duration(milliseconds: 3500);
+    var duration = const Duration(milliseconds: 4000);
     return Timer(duration, gotoHome);
   }
 
